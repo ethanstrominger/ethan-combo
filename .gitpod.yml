@@ -20,6 +20,7 @@ tasks:
   - name: intialize
     init: |
       cd us-congress-pizza-flag-tracker
+      touch test.txt
       export PIP_USER=false
       cp .env.example .env
       pip3 install -r requirements.txt
