@@ -31,9 +31,9 @@ tasks:
       DEBUG=True FLASK_APP=app.py flask db upgrade
 
     command: |
-    cd us-congress-pizza-flag-tracker
-    source myenv/bin/activate
-    FLASK_APP=app.py FLASK_ENV=development flask run
+      cd us-congress-pizza-flag-tracker
+      source myenv/bin/activate
+      FLASK_APP=app.py FLASK_ENV=development flask run
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
