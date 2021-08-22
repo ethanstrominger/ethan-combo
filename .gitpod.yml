@@ -19,6 +19,8 @@ github:
 tasks:
   - name: backend
     init: |
+      sh ./setup.sh > setup.log
+      cat setup.log
 
     command: |
       cd us-congress-pizza-flag-tracker
