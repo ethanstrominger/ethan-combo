@@ -1,0 +1,8 @@
+[submodule "us-congress-pizza-flag-tracker"]
+	path = us-congress-pizza-flag-tracker
+	url = https://github.com//ethanstrominger/us-congress-pizza-flag-tracker.git
+	branch = main
+[submodule "us-congress-pizza-flag-tracker-frontend"]
+	path = us-congress-pizza-flag-tracker-frontend
+	url = https://github.com//ethanstrominger/us-congress-pizza-flag-tracker-frontend.git
+	branch = main
