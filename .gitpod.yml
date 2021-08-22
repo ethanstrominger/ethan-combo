@@ -26,6 +26,11 @@ tasks:
       python3 -m venv myenv
       source myenv/bin/activate
       pip3 install -r requirements.txt
+      # Below two lines fixes:
+      #   ImportError: libGL.so.1: cannot open shared object file: No such file or directory
+      # Related to cv2 - can be removed if do away with cv2
+      sudo apt-get update 
+      sudo apt-get install ffmpeg libsm6 libxext6  -y
       DEBUG=True FLASK_APP=app.py flask db init
       DEBUG=True FLASK_APP=app.py flask db migrate
       DEBUG=True FLASK_APP=app.py flask db upgrade
@@ -38,4 +43,6 @@ tasks:
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
   - port: 3000
+    onOpen: open-preview
+  - port: 5000
     onOpen: open-preview
