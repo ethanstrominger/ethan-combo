@@ -19,6 +19,7 @@ github:
 tasks:
   - name: intialize
     init: |
+      cd us-congress-
       echo 'init script' # runs during prebuild
       export PIP_USER=false
       cp .env.example .env
