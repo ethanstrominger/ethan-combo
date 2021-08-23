@@ -1,9 +1,6 @@
       echo ***** Starting backend *****
       echo ***** Initial setup *****
       cd us-congress-pizza-flag-tracker
-      touch test.txt
-      ls flag.db
-      rm flag.db
       export PIP_USER=false
       cp .env.example .env
       python3 -m venv myenv
